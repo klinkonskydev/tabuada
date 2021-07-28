@@ -1,0 +1,168 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* html, * body {
+  width: 100vw;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "h h" "m m" "f f";
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 5vh 1fr 5vh;
+      grid-template-rows: 5vh 1fr 5vh;
+  background: #0009;
+}
+
+* html header, * body header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: h;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-shadow: 0 0 5px #000;
+  color: #fff;
+}
+
+* html main, * body main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: m;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* html main .calc, * body main .calc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 60vw;
+  height: 40vh;
+}
+
+@media (max-width: 400px) {
+  * html main .calc, * body main .calc {
+    height: 50vh;
+  }
+}
+
+* html main .calc .group, * body main .calc .group {
+  height: 100%;
+  min-width: 50vh;
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
+  background: #fff;
+}
+
+* html main .calc .group .table-elements, * body main .calc .group .table-elements {
+  font: 100 16px Arial, Helvetica, sans;
+  text-transform: uppercase;
+}
+
+* html main .calc .group .table-elements .ipt-numb, * body main .calc .group .table-elements .ipt-numb {
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  border: solid 1px black;
+  border-top: none;
+}
+
+* html main .calc .group .table-elements .btn, * body main .calc .group .table-elements .btn {
+  display: block;
+  margin: 1rem auto;
+  text-transform: uppercase;
+  padding: 6px;
+  background: transparent;
+  border: 2px solid #3e3eff;
+  border-radius: 3px;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+* html main .calc .group .table-elements .btn:hover, * body main .calc .group .table-elements .btn:hover {
+  color: white;
+  background-color: blue;
+  border: 2px solid #000;
+}
+
+* html main .calc .group .table-elements .btn:active, * body main .calc .group .table-elements .btn:active {
+  color: #3cff00;
+  background-color: #115300;
+  border: 2px solid #fff;
+}
+
+* html main .calc .group .table-div, * body main .calc .group .table-div {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+* html main .calc .group .table-div .table, * body main .calc .group .table-div .table {
+  min-width: 143px;
+  height: 98%;
+  text-align: center;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
+  border-radius: 5px;
+}
+
+* html footer, * body footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-shadow: 0 0 5px #000;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
